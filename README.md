@@ -13,7 +13,7 @@ Apache/2.4.25 (Unix)
 
 ## Configuration
 
-Feel free to adapt to your configuration and workflow.  Upon execution you'll be prompted for a 'production URL' and a 'local URL'.  
+Feel free to adapt to your configuration and workflow.  Upon execution you'll be prompted for a 'production URL' and a 'local URL'.  You should run this bash script by executing as your systems root user `sudo ./add/correct/path/to/osx-fast-vhost.sh`  
 
 Assuming that you're developing on a local webserver the script will use these input variables to:
    Configure a `<VirtualHost>` directive in apache's **httpd-vhosts.conf**,
@@ -30,9 +30,13 @@ Once you review the source of the script and confirm that it is properly configu
 
 Replace [password] with your admin/root user's password.  I suppose you could ask users to supply their password when running the script, if anyone has suggestions for improvements feel free to change it.
 
+## Set Permissions
+
+Make sure the script is executable `chmod a+x /path/to/osx-fast-vhost.sh`
+
 ## Running
 
-I add the script in my $PATH so I can easily execute it.  Alternatively you can execute the script by typing `./add/correct/path/to/fast-virtual-host.sh` in your terminal.
+I add the script in my $PATH so I can easily execute it.  Alternatively you can execute the script by typing `sudo ./add/correct/path/to/osx-fast-vhost.sh` in your terminal.
 
 ## Source
 
